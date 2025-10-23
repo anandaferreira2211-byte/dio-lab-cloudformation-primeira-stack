@@ -1,0 +1,15 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >
+  Template para criar meu primeiro bucket S3 com CloudFormation.
+
+Resources:
+  MeuBucketS3:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: minha-primeira-stack-cfn-seu-nome-unico # Mude isso!
+      AccessControl: Private
+      Tags:
+        - Key: Projeto
+          Value: LaboratorioCloudFormation
+        - Key: Nome
+          Value: BucketDoLuan
